@@ -50,7 +50,7 @@ namespace TestCSharp
 
 And it's output :
 
-```bash
+```
 $ dotnet run
 Hello World !
 $
