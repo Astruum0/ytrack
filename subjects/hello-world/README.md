@@ -12,7 +12,7 @@ dotnet new console
 
 # Instructions
 
-Write a function `HelloWorld` that return the string 'Hello World !'
+Write a function `HelloWorld` that return the string 'Hello World !'.
 
 # Expected Functions
 
@@ -23,7 +23,7 @@ namespace CSharpDiscovery.Quest01
     {
         public static string HelloWorld()
         {
-
+            // Your code
         }
     }
 }
@@ -31,7 +31,7 @@ namespace CSharpDiscovery.Quest01
 
 # Usage
 
-Here is a possible Program.cs file to test your function
+Here is a possible Program.cs file to test your function :
 
 ```C#
 using CSharpDiscovery.Quest01;
@@ -48,7 +48,7 @@ namespace TestCSharp
 }
 ```
 
-And it's output :
+And its output :
 
 ```
 $ dotnet run
