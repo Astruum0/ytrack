@@ -1,17 +1,15 @@
 # Instructions
 
-Write a function `SpellItBackwards` that returns the `string` passed as parameter in reverse.
-
-You don't have to use the `Reverse` method.
+Write a function `DoubleArrayForEvenInteger` that returns the `inputTab` passed as parameter, with all the odd numbers multiplied by 2.
 
 # Expected Functions
 
 ```C#
 namespace CSharpDiscovery.Quest01
 {
-    public class SpellItBackwards_Exercice
+    public class DoubleArrayForEvenInteger_Exercice
     {
-        public static string SpellItBackward(string str)
+         public static int[] DoubleArrayForEvenInteger(int[] inputTab)
         {
            // Your code
         }
@@ -24,16 +22,16 @@ namespace CSharpDiscovery.Quest01
 Here is a possible Program.cs file to test your function :
 
 ```C#
-using System;
 using CSharpDiscovery.Quest01;
 
 namespace TestCSharp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(int[] inputTab)
         {
-            Console.WriteLine(SpellItBackwards_Exercice.SpellItBackward("helloworld"));
+            var inputTab = new int[] { 1, 32, 7, 33 };
+            Console.WriteLine(DoubleArrayForEvenInteger_Exercice.DoubleArrayForEvenInteger(inputTab));
         }
     }
 }

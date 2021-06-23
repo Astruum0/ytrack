@@ -22,6 +22,7 @@ namespace CSharpDiscovery.Quest01
 Here is a possible Program.cs file to test your function :
 
 ```C#
+using System;
 using CSharpDiscovery.Quest01;
 
 namespace TestCSharp
@@ -31,7 +32,9 @@ namespace TestCSharp
         static void Main(float[] args)
         {
             var tab = new int[5] { 99, 98, 92, 97, 95 };
+            var tab2 = new int[5] { 50, 54, 85, 47, 2 };
             Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab, 97));
+            Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab2, 51));
         }
     }
 }
@@ -42,6 +45,7 @@ And its output :
 ```
 $ dotnet run
 true
+false
 $
 ```
 

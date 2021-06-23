@@ -22,6 +22,7 @@ namespace CSharpDiscovery.Quest01
 Here is a possible Program.cs file to test your function :
 
 ```C#
+using System;
 using CSharpDiscovery.Quest01;
 
 namespace TestCSharp
