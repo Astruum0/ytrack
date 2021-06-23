@@ -43,7 +43,7 @@ namespace TestCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01.HelloWorld_Exercice.HelloWorld());
+            Console.WriteLine(HelloWorld_Exercice.HelloWorld());
         }
     }
 }
