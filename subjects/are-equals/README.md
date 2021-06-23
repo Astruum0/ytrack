@@ -1,15 +1,15 @@
 # Instructions
 
-Write a function `FindLastIndex` that returns the index of the last occurence of the value `a` in the `tab` passed as parameter.
+Write a function `AreEquals` that returns true if the `tab1` and `tab2` passed in parameters are both exactly identical (same order and same values).
 
 # Expected Functions
 
 ```C#
-namespace CSharpDiscovery.Quest01
+namespace CSharpDiscovery.Quest02
 {
     public class AreEquals_Exercice
     {
-        public static int? FindLastIndex(int[] tab, int a)
+        public static bool AreEquals(int[] tab1, int[] tab2)
         {
            // Your code
         }
@@ -23,16 +23,18 @@ Here is a possible Program.cs file to test your function :
 
 ```C#
 using System;
-using CSharpDiscovery.Quest01;
-
+using CSharpDiscovery.Quest02;
 namespace TestCSharp
 {
     class Program
     {
-        static void Main(int[] str)
+        static void Main(bool[] str)
         {
             var tab = new int[] { 1, 2, 3, 4, 6 };
-            Console.WriteLine(AreEquals_Exercice.AreEquals(tab, 2));
+            var tab2 = new int[] { 1, 2, 3, 4, 6 };
+            var tab3 = new int[] { 1, 2, 3, 4, 5 };
+            Console.WriteLine(AreEquals_Exercice.AreEquals(tab, tab2));
+            Console.WriteLine(AreEquals_Exercice.AreEquals(tab2, tab3));
         }
     }
 }
@@ -42,6 +44,7 @@ And its output :
 
 ```
 $ dotnet run
-1
+true
+false
 $
 ```
