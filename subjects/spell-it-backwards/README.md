@@ -30,8 +30,8 @@ namespace TestCSharp
     {
         static void Main(float[] args)
         {
-            var tab = new int[5] { 99, 98, 92, 97, 95 };
-            Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab, 97));
+            Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab, 2));
+            Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab, 3));
         }
     }
 }
@@ -42,6 +42,7 @@ And its output :
 ```
 $ dotnet run
 true
+false
 $
 ```
 
