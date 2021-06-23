@@ -9,7 +9,7 @@ namespace CSharpDiscovery.Quest02
 {
     public class DisplayDateWithoutTime_Exercice
     {
-        public static int DisplayDateWithoutTime(DateTime date)
+        public static string DisplayDateWithoutTime(DateTime date)
         {
             // Your code
         }
