@@ -1,15 +1,17 @@
 # Instructions
 
-Write a function `ContainsThisValue` that returns true if the `value` passed as parameter is in `tab`, otherwise return false.
+Write a function `SpellItBackwards` that returns the `string` passed as parameter in reverse.
+
+You don't have to use the `Reverse` method.
 
 # Expected Functions
 
 ```C#
 namespace CSharpDiscovery.Quest01
 {
-    public class ContainsThisValue_Exercice
+    public class SpellItBackwards_Exercice
     {
-        public static bool ContainsThisValue(int[] tab, int value)
+        public static string SpellItBackward(string str)
         {
            // Your code
         }
@@ -28,10 +30,9 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(float[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab, 2));
-            Console.WriteLine(ContainsThisValue_Exercice.ContainsThisValue(tab, 3));
+            Console.WriteLine(SpellItBackwards_Exercice.SpellItBackward("helloworld"));
         }
     }
 }
@@ -41,11 +42,9 @@ And its output :
 
 ```
 $ dotnet run
-true
-false
+dlrowolleh
 $
 ```
 
 # Notions
-- https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/statements/iteration-statements
-- https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/if-else
+- https://docs.microsoft.com/fr-fr/dotnet/api/system.string.tochararray?view=net-5.0
