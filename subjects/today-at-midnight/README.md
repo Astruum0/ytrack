@@ -47,4 +47,4 @@ $
 
 # Notions
 
--
+- https://docs.microsoft.com/fr-fr/dotnet/api/system.datetime
