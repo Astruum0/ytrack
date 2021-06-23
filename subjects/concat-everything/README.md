@@ -33,7 +33,7 @@ namespace TestCSharp
     {
         static void Main(string[] str)
         {
-            string[] table = { "hello", "world" }
+            string[] table = { "hello", "world" };
             Console.WriteLine(ConcatEverything_Exercice.ConcatEverything(table));
         }
     }
