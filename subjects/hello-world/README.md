@@ -11,6 +11,14 @@ Once created, clone and cd into the repo and run this command:
 dotnet new console
 ```
 
+This will create a few files, including a file named `Program.cs`. This file will be used to let you test your functions. Use :
+
+```sh
+dotnet run
+```
+
+to get an output of your function in your console.
+
 # Instructions
 
 Write a function `HelloWorld` that return the string 'Hello World !'.
