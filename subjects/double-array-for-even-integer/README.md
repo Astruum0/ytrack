@@ -29,7 +29,7 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(int[] inputTab)
+        static void Main(string[] inputTab)
         {
             var inputTab = new int[] { 1, 32, 7, 33 };
             Console.WriteLine(DoubleArrayForEvenInteger_Exercice.DoubleArrayForEvenInteger(inputTab));
@@ -47,4 +47,5 @@ $
 ```
 
 # Notions
+
 - https://docs.microsoft.com/fr-fr/dotnet/api/system.string.tochararray?view=net-5.0

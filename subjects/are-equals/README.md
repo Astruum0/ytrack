@@ -28,7 +28,7 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(bool[] str)
+        static void Main(string[] str)
         {
             var tab = new int[] { 1, 2, 3, 4, 6 };
             var tab2 = new int[] { 1, 2, 3, 4, 6 };

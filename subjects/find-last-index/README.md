@@ -1,6 +1,6 @@
 # Instructions
 
-Write a function `FindLastIndex` that returns the index of the last occurence of the value `a` in the `tab` passed as parameter.
+Write a function `FindLastIndex` that returns the index of the last occurence of the value `a` in the `tab` passed as parameter. Return `null` if the value is not in the array
 
 # Expected Functions
 
@@ -28,10 +28,12 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(bool[] str)
+        static void Main(string[] str)
         {
-            var tab = new int[] { 1, 2, 3, 4, 6 };
-            Console.WriteLine(FindLastIndex_Exercice.FindLastIndex(tab, 2));
+            var tab = new int[] { 20, 35, 12, 56, 35, 76 };
+            Console.WriteLine(FindLastIndex_Exercice.FindLastIndex(tab, 12));
+            Console.WriteLine(FindLastIndex_Exercice.FindLastIndex(tab, 35));
+            Console.WriteLine(FindLastIndex_Exercice.FindLastIndex(tab, 66));
         }
     }
 }
@@ -41,6 +43,8 @@ And its output :
 
 ```
 $ dotnet run
-1
+2
+4
+
 $
 ```

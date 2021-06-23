@@ -29,7 +29,7 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(bool[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine(IsOdd_Exercice.IsOdd(2));
             Console.WriteLine(IsOdd_Exercice.IsOdd(11));

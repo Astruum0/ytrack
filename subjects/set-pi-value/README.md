@@ -29,7 +29,7 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(float[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine(CSharpDiscovery.Quest01.SetPiValue_Exercice.SetPiValue());
         }
