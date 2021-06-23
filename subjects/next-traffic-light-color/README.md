@@ -2,7 +2,7 @@
 
 Write a function `NextTrafficLightColor` that returns the next traffic color based on the traffic color passed as parameter, if the color 'None' is passed as parameters, you will need to return the None color back
 
-In order to do this exercice, you will need to download the `TrafficLightColor.cs` file [here]() that contains an enum of all 3 colors Green, Orange and Red. Place this file in a `Models` folder
+In order to do this exercice, you will need to download the `TrafficLightColor.cs` file [here](https://github.com/Astruum0/ytrack/blob/main/subjects/next-traffic-light-color/TrafficLightColor.cs) that contains an enum of all 3 colors Green, Orange and Red. Place this file in a `Models` folder
 
 # Expected Functions
 
