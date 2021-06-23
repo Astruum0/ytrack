@@ -7,7 +7,7 @@ Write a function `IsOdd` that returns true if the int passed as parameter is eve
 ```C#
 namespace CSharpDiscovery.Quest01
 {
-    public class _03_IsOdd
+    public class IsOdd_Exercice
     {
         public static bool IsOdd(int a)
         {
@@ -30,7 +30,9 @@ namespace TestCSharp
     {
         static void Main(bool[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01._03_IsOdd.IsOdd());
+            Console.WriteLine(CSharpDiscovery.Quest01.IsOdd_Exercice.IsOdd(2));
+            Console.WriteLine(CSharpDiscovery.Quest01.IsOdd_Exercice.IsOdd(11));
+            Console.WriteLine(CSharpDiscovery.Quest01.IsOdd_Exercice.IsOdd(30));
         }
     }
 }
@@ -40,7 +42,8 @@ And its output :
 
 ```
 $ dotnet run
-// For a = 2
+true
+false
 true
 $
 ```

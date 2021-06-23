@@ -6,6 +6,7 @@ https://dotnet.microsoft.com/download
 Create a repository named `piscine-csharp-discovery`
 
 Once created, clone and cd into the repo and run this command:
+
 ```sh
 dotnet new console
 ```
@@ -19,7 +20,7 @@ Write a function `HelloWorld` that return the string 'Hello World !'.
 ```C#
 namespace CSharpDiscovery.Quest01
 {
-    public class _01_HelloWorld
+    public class HelloWorld_Exercice
     {
         public static string HelloWorld()
         {
@@ -42,7 +43,7 @@ namespace TestCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01._01_HelloWorld.HelloWorld());
+            Console.WriteLine(CSharpDiscovery.Quest01.HelloWorld_Exercice.HelloWorld());
         }
     }
 }

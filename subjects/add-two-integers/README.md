@@ -7,7 +7,7 @@ Write a function `AddTwoIntegers` that returns the sum of two integers passed as
 ```C#
 namespace CSharpDiscovery.Quest01
 {
-    public class _02_AddTwoIntegers
+    public class AddTwoIntegers_Exercice
     {
         public static int AddTwoIntegers(int a, int b)
         {
@@ -30,7 +30,8 @@ namespace TestCSharp
     {
         static void Main(int[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01._02_AddTwoIntegers.AddTwoIntegers());
+            Console.WriteLine(CSharpDiscovery.Quest01.AddTwoIntegers_Exercice.AddTwoIntegers(1, 2));
+            Console.WriteLine(CSharpDiscovery.Quest01.AddTwoIntegers_Exercice.AddTwoIntegers(10, 5));
         }
     }
 }
@@ -40,7 +41,7 @@ And its output :
 
 ```
 $ dotnet run
-// For a = 1 and b = 2
 3
+15
 $
 ```
