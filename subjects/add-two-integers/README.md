@@ -30,8 +30,8 @@ namespace TestCSharp
     {
         static void Main(int[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01.AddTwoIntegers_Exercice.AddTwoIntegers(1, 2));
-            Console.WriteLine(CSharpDiscovery.Quest01.AddTwoIntegers_Exercice.AddTwoIntegers(10, 5));
+            Console.WriteLine(AddTwoIntegers_Exercice.AddTwoIntegers(1, 2));
+            Console.WriteLine(AddTwoIntegers_Exercice.AddTwoIntegers(10, 5));
         }
     }
 }

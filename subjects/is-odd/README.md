@@ -30,9 +30,9 @@ namespace TestCSharp
     {
         static void Main(bool[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01.IsOdd_Exercice.IsOdd(2));
-            Console.WriteLine(CSharpDiscovery.Quest01.IsOdd_Exercice.IsOdd(11));
-            Console.WriteLine(CSharpDiscovery.Quest01.IsOdd_Exercice.IsOdd(30));
+            Console.WriteLine(IsOdd_Exercice.IsOdd(2));
+            Console.WriteLine(IsOdd_Exercice.IsOdd(11));
+            Console.WriteLine(IsOdd_Exercice.IsOdd(30));
         }
     }
 }
