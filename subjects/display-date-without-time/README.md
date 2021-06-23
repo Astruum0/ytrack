@@ -44,7 +44,3 @@ $ dotnet run
 14/01/2021
 $
 ```
-
-# Notions
-
-- https://docs.microsoft.com/fr-fr/dotnet/api/system.datetime.tostring?view=net-5.0
