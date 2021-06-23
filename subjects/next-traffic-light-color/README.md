@@ -7,6 +7,8 @@ In order to do this exercice, you will need to download the `TrafficLightColor.c
 # Expected Functions
 
 ```C#
+using CSharpDiscovery.Models;
+
 namespace CSharpDiscovery.Quest01
 {
     public class NextTrafficLight_Exercice
