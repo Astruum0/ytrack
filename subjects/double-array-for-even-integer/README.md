@@ -42,7 +42,7 @@ And its output :
 
 ```
 $ dotnet run
-dlrowolleh
+2 32 14 66
 $
 ```
 
