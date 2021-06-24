@@ -12,7 +12,7 @@ You first task is to set 3 empty properties on this class:
 
 Then add a static string property named `GoogleMapsUrlTemplate` and set its value to `https://www.google.com/maps/place/{0}/@{1},{2},15z/`
 
-All of this properties must remain `public`
+All of these properties must remain `public`
 
 # Usage
 
