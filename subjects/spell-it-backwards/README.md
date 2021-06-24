@@ -2,7 +2,7 @@
 
 Write a function `SpellItBackwards` that returns the `string` passed as parameter in reverse.
 
-You don't have to use the `Reverse` method.
+Warning : Using the `Reverse` method is NOT allowed.
 
 # Expected Functions
 
