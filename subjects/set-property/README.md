@@ -10,9 +10,13 @@ You first task is to set 3 empty properties on this class:
 - Longitude (Double)
 - Name (String)
 
+Then add a static property named `GoogleMapsUrlTemplate` and set its value to `https://www.google.com/maps/place/{0}/@{1},{2},15z/`
+
+All of this properties must remain `public`
+
 # Usage
 
-Here is a possible Program.cs file to test your function :
+Here is a possible Program.cs file to test your code :
 
 ```c#
 using System;
@@ -28,6 +32,8 @@ namespace TestCSharp
             Console.WriteLine(poi.Latitude);
             Console.WriteLine(poi.Longitude);
             Console.WriteLine(poi.Name);
+
+            Console.WriteLine(PointOfInterest.GoogleMapsUrlTemplate);
         }
     }
 }
@@ -40,5 +46,6 @@ $ dotnet run
 0
 0
 
+https://www.google.com/maps/place/{0}/@{1},{2},15z/
 $
 ```
