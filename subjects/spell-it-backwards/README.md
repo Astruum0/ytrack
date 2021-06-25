@@ -2,8 +2,6 @@
 
 Write a function `SpellItBackwards` that returns the `string` passed as parameter in reverse.
 
-Warning : Using the `Reverse` method is NOT allowed.
-
 # Expected Functions
 
 ```C#
