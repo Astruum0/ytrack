@@ -33,6 +33,6 @@ and it's output :
 
 ```
 $ dotnet run
-Porte Cailhau is a historical monument built in 1493
+Bordeaux Ynov Campus is a campus with a capacity of 1500 students
 $
 ```
