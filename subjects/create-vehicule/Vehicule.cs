@@ -19,7 +19,7 @@ namespace CSharpDiscovery.Quest04
 
         public virtual void WhoAmI()
         {
-            Console.WriteLine(string.Format(CultureInfo.InvariantCulture, "Je suis un véhicule non-identifié de couleur {0} qui se déplace à {1} km/h", Color, Speed));
+            Console.WriteLine(string.Format(CultureInfo.InvariantCulture, "I'm a {0} vehicule and I'm moving at a speed of {1} km/h", Color, Speed));
         }
 
         public static void WhoIsThere()
@@ -27,7 +27,6 @@ namespace CSharpDiscovery.Quest04
             Console.WriteLine("---------------------------------");
             if (List != null && List.Count > 0)
             {
-                Console.WriteLine("Il y a du monde ici !");
                 foreach (Vehicule item in List)
                 {
                     item.WhoAmI();
@@ -35,7 +34,7 @@ namespace CSharpDiscovery.Quest04
             }
             else
             {
-                Console.WriteLine("Personne dans les parages...");
+                Console.WriteLine("Nobody's here...");
             }
             Console.WriteLine("---------------------------------");
         }
