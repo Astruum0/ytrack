@@ -23,7 +23,7 @@ namespace TestCSharp
         static void Main(string[] str)
         {
             var BordeauxCampus = new Campus();
-            BordeauxCampus.Capacity = 3000;
+            BordeauxCampus.Capacity = 1500;
             Console.WriteLine(BordeauxCampus.ToString());
         }
     }
@@ -34,6 +34,6 @@ and it's output :
 
 ```
 $ dotnet run
-Bordeaux Ynov Campus is a campus with a capacity of 3000 students
+Bordeaux Ynov Campus is a campus with a capacity of 1500 students
 $
 ```
