@@ -47,7 +47,7 @@ namespace TestCSharp
 }
 ```
 
-Normally, your code is supposed to output this:
+and it's output :
 
 ```
 $ dotnet run
