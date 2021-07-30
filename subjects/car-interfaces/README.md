@@ -2,7 +2,7 @@
 
 Alright now let's take a look at what we call Interfaces !
 
-Create a file named `VehiculeInterfaces.cs`. In the namespace `CSharpDiscovery.Quest04`, create 2 interfaces `IThermalCar` and `IElectricCar`.
+Create a file named `CarInterfaces.cs`. In the namespace `CSharpDiscovery.Quest04`, create 2 interfaces `IThermalCar` and `IElectricCar`.
 
 The `IThermalCar` interface must contains:
 
