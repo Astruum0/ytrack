@@ -2,13 +2,21 @@
 
 Create a filename `Truck.cs` with the same namespace `CSharpDiscovery.Quest04`.
 
-Create a class named `Truck` and make it inherit from `Vehicule`, found a way to also add a property `Brand` to your truck, but without having some duplicated code with your `Car` class (try to remember your parent `Vehicule` class)
+Create a class named `Truck` and make it inherit from `Vehicule`
 
 Add an Integer property `Tonnage` to your `Truck` class.
 
-Using the keyword `base()`, create a constructor that requires the following arguments: `Color`, `Speed`, `Brand` and `Tonnage`
+Using the keyword `base()`, create 2 constructors:
 
-Redefine the method `WhoAmI` so that it prints something like that: "I'm a (Color) (Brand) truck of (Tonnage) tons, and I'm moving at a speed of (Speed) km/h"
+- One parameterless, equivalent to the parameterless constructor in Vehicule.cs, where you define `Tonnage` as `0`
+- One that requires the following arguments: `Tonnage`, `Brand`, `Color` and `CurrentSpeed` (with a default value of 0)
+
+Override the `ToString()` method to return a string under the format of `"(Color) (Brand) (Tonnage)T Truck"`
+
+Same for the `Car` class, you will need to override the `Accelerate` and `Brake` methods:
+
+- `Accelerate()` needs to add to your `CurrentSpeed` the int passed as parameter. ⚠️ Be careful ! Your current speed can\`t go past `100` km/h !
+- `Brake()` needs to remove to your `CurrentSpeed` the int passed as parameter, and as the Accelerate method, you cannot have a negative speed 😉
 
 # Usage
 
@@ -23,11 +31,17 @@ namespace TestCSharp
     {
         static void Main(string[] str)
         {
-            var RandomVehicule = new Vehicule("blue", 30, "");
-            var Megane = new Car("red", 50, "Renault", "Megane");
-            var RenaultTruck = new Truck("black", 30, "Renault", 1000);
+            var RandomTruck = new Truck();
+            var MAC = new Truck(2, "MAC", "White", 80);
+            var Renault = new Truck(3, "Renault", "Black", 20);
 
-            Vehicule.WhoIsThere();
+            Vehicule.WhoIsHere();
+
+            RandomTruck.Accelerate(30);
+            MAC.Accelerate(40);
+            Renault.Brake(30);
+
+            Vehicule.WhoIsHere();
         }
     }
 }
@@ -38,9 +52,16 @@ Normally, your code is supposed to output this:
 ```
 $ dotnet run
 ---------------------------------
-I'm a blue vehicule and I'm moving at a speed of 30 km/h
-I'm a Red car (Renault/Megane) and I'm moving at a speed of 50 km/h
-I'm a Black Renault truck of 1000 tons, and I'm moving at a speed of 30 km/h
+Vehicules on the road :
+- Unknown Unknown 0T Truck, stopped.
+- White MAC 2T Truck, moving at 80km/h.
+- Black Renault 3T Truck, moving at 20km/h.
+---------------------------------
+---------------------------------
+Vehicules on the road :
+- Unknown Unknown 0T Truck, moving at 30km/h.
+- White MAC 2T Truck, moving at 100km/h.
+- Black Renault 3T Truck, stopped.
 ---------------------------------
 $
 ```

@@ -1,12 +1,17 @@
 # Instructions
 
+Download the `Vehicule.cs` class [here](Vehicule.cs)
+
 Create a filename `Car.cs` with the same namespace `CSharpDiscovery.Quest04`.
 
-Create a class named `Car` and make it inherit from `Vehicule` and add the property `Brand` and `Model` (both string)
+Create a class named `Car` and make it inherit from `Vehicule` and add the string property `Brand`
 
-Using the keyword `base()`, create a constructor that requires the following arguments: `Color`, `Speed`, `Brand` and `Model`
+Using the keyword `base()`, create 2 constructors:
 
-Redefine the method `WhoAmI` so that it prints something like that: "I'm a (Color) car ((Brand)/(Model)) and I'm moving at a speed of (Speed) km/h"
+- One parameterless, equivalent to the parameterless constructor in Vehicule.cs, where you define `Brand` as `"Unknown"`
+- One that requires the following arguments: `Model`, `Brand`, `Color` and `CurrentSpeed` (with a default value of 0)
+
+Override the `ToString()` method to return a string under the format of `"(Color) (Brand) (Model)"`
 
 # Usage
 
@@ -21,8 +26,9 @@ namespace TestCSharp
     {
         static void Main(string[] str)
         {
-            var myVehicule = new Car("Red", 50, "Renault", "Megane");
-            myVehicule.WhoAmI();
+            var RandomCar = new Car();
+            var Megane = new Car("Mégane", "Renault", "Yellow", 50);
+            Vehicule.WhoIsHere();
         }
     }
 }
@@ -32,6 +38,10 @@ and it's output :
 
 ```
 $ dotnet run
-I'm a Red car (Renault/Megane) and I'm moving at a speed of 50 km/h
+---------------------------------
+Vehicules on the road :
+- Unknown Unknown Unknown, stopped.
+- Yellow Renault Mégane, moving at 50km/h.
+---------------------------------
 $
 ```
